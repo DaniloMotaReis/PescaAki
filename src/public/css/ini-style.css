@@ -1,0 +1,60 @@
+.body {
+    max-width: 1280px;
+    margin: 0 auto;
+    background-color: #1B7C8C;
+}
+
+.logo {
+    width: 100px;
+    height: 50px;
+
+}
+
+h3 {
+    margin: 20px;
+
+}
+
+
+.form-sign {
+    align-items: center;
+    color: #312c2c;
+    justify-content: center;
+
+}
+
+.testelogin {
+    width: 80px;
+    height: 40px;
+}
+
+.imglogin {
+    display: flex;
+    justify-content: flex-end;
+    padding: 15px;
+    gap: 30px;
+}
+
+.tescad {
+    width: 80px;
+    height: 40px;
+}
+
+.imgcad {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.form-group {
+    margin: 15px;
+}
+
+.link {
+    color: antiquewhite;
+}
+
+.erro {
+    width: 100%;
+    text-align: center;
+}
+

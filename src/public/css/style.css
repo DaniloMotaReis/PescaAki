@@ -1,0 +1,164 @@
+.cor {
+    background-color: #4169E1;
+}
+
+.logo {
+    width: 100px;
+    height: 50px;
+
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+    background-color: #4169E1;
+    border-radius: 15px 15px 0px 0px;
+}
+
+.form-sign {
+    align-items: center;
+    color: #000000;
+    justify-content: center;
+
+}
+
+.testelogin {
+    width: 80px;
+    height: 40px;
+}
+
+.imglogin {
+    display: flex;
+    justify-content: flex-end;
+    padding: 15px;
+    gap: 30px;
+}
+
+.form-group {
+    margin: 15px;
+}
+
+.pesc {
+    width: 350px;
+    height: 500px;
+    margin: 15px;
+}
+
+.pescimg {
+    width: 100%;
+}
+
+.ava {
+    width: 25%;
+    margin: 5px;
+    display: flex;
+    justify-items: space-between;
+}
+
+a {
+    color: #0FA958;
+}
+
+a:link {
+    text-decoration: none;
+
+}
+
+.barpec {
+    justify-items: space-around;
+}
+
+.imgpesc{
+    display:flex;
+    justify-content:flex-start;
+}
+
+.pescimgs{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.pimg{
+    margin: 10px;
+    width: 250px;
+    height: 150px;
+}
+
+.info{
+    width: 100%;
+    height: 100%;
+    display:flex;
+}
+
+.serv{
+    width: 40%;
+    display: flex;
+
+    margin-right: 50px;
+}
+
+.servs{
+    width: 50%;
+    margin-right: 5px;
+}
+
+.desc{
+    width: 30%;
+    margin-right: 50px
+}
+
+.map{
+    width: 30%;
+}
+
+.inforese{
+    display: flex;
+}
+
+.reserva{
+    display: flex;
+    width: 60%;
+    margin: 15px;
+}
+
+.inputs{
+    width: 60%;
+}
+
+.botoes{
+    margin-left: 20px;
+    margin-top: 125px;
+}
+
+.infores{
+    margin-left: 10px;
+    max-height: 250px;
+}
+
+.head{
+    display: flex;
+    justify-content: space-between;
+}
+
+.visua{
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.age{
+    display: flex;
+    justify-content: space-between;
+}
+
+.contpesc{
+    display: flex;
+}
+
+#chat{
+    margin-left: 20px;
+}

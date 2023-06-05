@@ -1,0 +1,27 @@
+<div class="container mt-4 col-lg-4">
+    <main><br>
+        <div class="card col-sm-8">
+            <div class="card-body">
+                <form class="form-sign" action="/pescaaki/login/usuario" method="POST">
+                    <div class="form-group text-center">
+                        <div class="imglogin">
+                            <h3>Login</h3>
+                            <img class="testelogin" src="/img/pescaaki.png">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>E-Mail:</label>
+                        <input type="text" name="email" id="email" value="" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label>Senha:</label>
+                        <input type="password" name="senha" id="senha" value="" class="form-control">
+                    </div>
+                    {{>_msg}}
+                    <input type="submit" name="btnLog" value="Logar" id="btnLog" class="btn btn-primary btn-block">
+                </form>
+            </div>
+        </div>
+    </main>
+    <a class="link" href="/pescaaki/cadastro/">Não possui conta?</a>
+</div>

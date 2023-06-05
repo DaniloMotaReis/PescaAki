@@ -1,0 +1,32 @@
+<main>
+    <div>
+        <div class="container-fluid py-5">
+            <h2>Destaques</h2><br><br>
+            <div class="contpesc">
+                {{#each pesqueiros}}
+                <div class="pesc">
+                    <div class="card mt-4">
+                        <div class="card-body">
+                            <img src="{{imagem}}" class="pescimg"><br>
+                            <div class="ava">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+                            <h4>{{nome_pesq}}</h4>
+                            <small>{{descricao}}</small><br>
+                            <a href="/pescaaki/pesqueiro/{{id_pesqueiro}}">
+                                <button class="btn btn-primary mt-3">
+                                    Ler mais <i class="bi bi-arrow-right"></i>
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                {{/each}}
+            </div>
+        </div>
+    </div>
+</main>

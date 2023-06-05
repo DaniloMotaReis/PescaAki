@@ -1,0 +1,28 @@
+<main>
+    <div>
+        <div class="container-fluid py-5">
+            <div class="head">
+                <h2>Agendamentos</h2>
+                <a href="/pescaaki/feed"><button class="btn btn-success">Fazer uma reserva <i class="bi bi-arrow-right"></i></button></a>
+            </div>
+            <div class="card mt-4">
+                <div class="visua">
+                <label><strong>Visualizados recentemente</strong></label>
+                <a href="">Visualizar todas</a>
+                </div>
+                {{#each agendamentos}}
+                <div class="card-body">
+                    <div class="age">
+                    <strong>{{nome_pesq}}</strong>
+                    <div>
+                        <a href="/pescaaki/agendadas/cancelar/{{id_reserva}}"><button class="btn btn-outline-secondary">Cancelar reserva <i class="bi bi-arrow-right"></i></button></a>
+                        <a href=""><button class="btn btn-success">Visualizar <i class="bi bi-arrow-right"></i></button></a>
+                    </div>
+                    </div>
+                </div>
+                <hr>
+                {{/each}}
+            </div>
+        </div>
+    </div>
+</main>

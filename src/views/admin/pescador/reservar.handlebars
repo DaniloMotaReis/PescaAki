@@ -1,0 +1,46 @@
+<main>
+    <div>
+        <div class="container-fluid py-5">
+            {{#each pesqueiros}}
+            <h2>{{nome_pesq}}</h2><br><br>
+            <div>
+                <div class="card-body">
+                    {{>_barpec}}<br>
+                    <div class="inforese">
+                        <img src="{{imagem}}" width="1200px" height="325px"><br><br>
+                        <div class="infores">
+                            <label><strong>Telefone:</strong></label>
+                            <small>{{telefone}}</small><br>
+                            <label><strong>E-Mail:</strong></label>
+                            <small>{{email}}</small><br>
+                            <label><strong>Descrição:</strong></label>
+                            <small>{{descricao}}</small><br>
+                        </div>
+                    </div>
+                    <a href="/pescaaki/reservar/{{id_pesqueiro}}" id="chat"><button class="btn btn-success mt-3">Acessar Chat Online <i class="bi bi-arrow-right"></i></button></a>
+                    <form class="reserva" action="/pescaaki/reservar/criar/{{id_pesqueiro}}" method="POST">
+                        <div class="inputs">
+                            <input class="form-control" type="date" name="data" id="data"><br>
+                            <input class="form-control" type="time" name="tempo" id="tempo"><br>
+                            <div class="input-group mb-3">
+                                <label class="input-group-text" for="inputGroupSelect01">Forma de Pagamento</label>
+                                <select class="form-select" name="pagamento" id="pagamento">
+                                    <option selected>Escolha...</option>
+                                    <option value="boleto">Boleto</option>
+                                    <option value="pix">Pix</option>
+                                    <option value="credito">Credito</option>
+                                    <option value="debito">Debito</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="botoes">
+                            <a href="/pescaaki/reservar/{{id_pesqueiro}}"><button class="btn btn-outline-secondary"><i class="bi bi-arrow-left"></i> Voltar</button></a>
+                            <input type="submit" name="btnLog" value="Confirmar" id="btnLog" class="btn btn-success btn-block">
+                        </div>
+                    </form>
+                </div>
+            </div>
+            {{/each}}
+        </div>
+    </div>
+</main>
